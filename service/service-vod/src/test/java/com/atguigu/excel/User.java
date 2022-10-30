@@ -1,0 +1,18 @@
+package com.atguigu.excel;
+
+import com.alibaba.excel.annotation.ExcelProperty;
+import lombok.Data;
+
+/**
+ * @author shkstart
+ * @create 2022-10-13 11:22
+ */
+@Data
+public class User {
+
+    @ExcelProperty(value = "用户编号",index = 0)
+    private Integer id;
+
+    @ExcelProperty(value = "用户名称",index = 1)
+    private String name;
+}
